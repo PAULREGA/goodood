@@ -1,0 +1,32 @@
+Stage One API
+---
+tags:
+- Stage One
+parameters:
+- in: query
+  name: slack_name
+  schema:
+    type: string
+    example: "smart_guy"
+  description: "Name"
+- in: query
+  name: track
+  schema:
+    type: string
+    example: "Backend"
+  description: "Track registered for"
+
+
+responses:
+  200:
+    description: Successful
+    examples:
+      application/json:
+        slack_name: "example_name"
+        current_day: "Monday"
+        utc_time: "2023-08-21T15:04:05Z"
+        track: "backend"
+        github_file_url: "https://github.com/username/repo/blob/main/file_name.ext"
+        github_repo_url: "https://github.com/username/repo"
+        status_code: 200
+

@@ -1,0 +1,12 @@
+API status
+---
+tags:
+  - Status
+responses:
+  200:
+    description: Successful
+    examples:
+      application/json:
+        data: Running..
+        message: true
+        status: success
